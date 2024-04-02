@@ -37,10 +37,10 @@ end)
 
 # NNGRP Frame
 ## Mit :SetBGImg(false)
-<img src="https://raw.githubusercontent.com/NupsNils/nngrp_guides/main/ui_elements/imgs/nngrp_frame_false.png">
+<img src="https://raw.githubusercontent.com/NupsNils/nngrp_guides/main/ui_elements/imgs/nngrp_frame_false.png" style="width: 300px; height: 250px">
 
 ## Mit :SetBGImg("LINK ZUM MATERIAL")
-<img src="https://raw.githubusercontent.com/NupsNils/nngrp_guides/main/ui_elements/imgs/nngrp_frame_true.png">
+<img src="https://raw.githubusercontent.com/NupsNils/nngrp_guides/main/ui_elements/imgs/nngrp_frame_true.png" style="width: 300px; height: 250px">
 
 ```LUA
 :SetBGImg(bgimg) // Link zum Material z.B. "nng/img4" (Materials Ordner bei Addons)

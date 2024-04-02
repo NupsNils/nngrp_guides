@@ -86,3 +86,21 @@ for k, v in pairs({"Test1","Test2","Test3","Test4","Test5"}) do
     end
 end
 ```
+
+# NNGRP Scrollpanel
+<img src="https://raw.githubusercontent.com/NupsNils/nngrp_guides/main/ui_elements/imgs/nngrp_scrollpanel.png">
+
+## Bsp. wie im Bild
+```LUA
+self.Element = self.Frame:Add("NNGRP.ScrollPanel")
+self.Element:SetSize(w * .4, h * .4)
+self.Element:Center()
+
+for i = 0, 20 do
+    self.TestButton = self.Element:Add("NNGRP.Button")
+    self.TestButton:Dock(TOP)
+    self.TestButton:SetUp("Button " .. i, "NNGRP.20", Color(20, 100, 20), function()
+        // FUNKTION
+    end)
+end
+```

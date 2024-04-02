@@ -34,3 +34,23 @@ self.Element:SetUp(function()
     frame:Close()
 end)
 ```
+
+# NNGRP Frame
+## Mit :SetBGImg(false)
+<img src="https://raw.githubusercontent.com/NupsNils/nngrp_guides/main/ui_elements/imgs/nngrp_frame_false.png">
+
+## Mit :SetBGImg("LINK ZUM MATERIAL")
+<img src="https://raw.githubusercontent.com/NupsNils/nngrp_guides/main/ui_elements/imgs/nngrp_frame_true.png">
+
+```LUA
+:SetBGImg(bgimg) // Link zum Material z.B. "nng/img4" (Materials Ordner bei Addons)
+:SetFrameInfo(header, info) // Header = Titel, Info = Beschreibung
+```
+## Bsp. wie im Bild
+```LUA
+self.Frame = vgui.Create("NNGRP.Frame")
+self.Frame:SetPos((ScrW() - w) / 2, (ScrH() - h) / 2)
+self.Frame:SetSize(w, h)
+self.Frame:SetFrameInfo("BSP. Servername", "BSP. Waffenkiste")
+self.Frame:SetBGImg(false)
+```

@@ -1,5 +1,5 @@
-**#INFO**
-**##Die Farbe der Elemente (In diesem Fall Lila) ist in der Config des Gamemodes anpassbar**
+**#INFO
+**##Die Farbe der Elemente (In diesem Fall Lila) ist in der Config des Gamemodes anpassbar
 
 # Font
 "NNGRP.SIZE" - Bsp. "NNGRP.24"

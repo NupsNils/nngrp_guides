@@ -1,3 +1,6 @@
+**#INFO**
+**##Die Farbe der Elemente (In diesem Fall Lila) ist in der Config des Gamemodes anpassbar**
+
 # Font
 "NNGRP.SIZE" - Bsp. "NNGRP.24"
 
@@ -103,4 +106,14 @@ for i = 0, 20 do
         // FUNKTION
     end)
 end
+```
+
+# NNGRP TextEntry
+<img src="https://raw.githubusercontent.com/NupsNils/nngrp_guides/main/ui_elements/imgs/nngrp_textentry.png">
+
+## Bsp. wie im Bild
+```LUA
+self.Element = self.Frame:Add("NNGRP.TextEntry")
+self.Element:SetSize(w * .4, h * .1)
+self.Element:Center()
 ```

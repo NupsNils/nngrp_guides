@@ -1,4 +1,4 @@
--*#INFO*-
+__#INFO__
 *##Die Farbe der Elemente (In diesem Fall Lila) ist in der Config des Gamemodes anpassbar
 
 # Font

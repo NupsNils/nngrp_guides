@@ -4,9 +4,11 @@
 # NNGRP Button
 <img src="https://raw.githubusercontent.com/NupsNils/nngrp_guides/main/ui_elements/imgs/nngrp_button.png">
 ```lua
+
 :SetMsg(text) // Ändert den Text des Buttons
 :SetCol(color) // Ändert die Farbe des Buttons
 :SetUp(text, font, color, func) Bsp. :SetUp("TEST", "NNGRP.24", Color(255, 0, 0), function() print("TEST") end
+
 ```
 ## Bsp. wie im Bild
 ```lua

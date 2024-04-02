@@ -54,3 +54,35 @@ self.Frame:SetSize(w, h)
 self.Frame:SetFrameInfo("BSP. Servername", "BSP. Waffenkiste")
 self.Frame:SetBGImg(false)
 ```
+
+# NNGRP ListView
+<img src="https://raw.githubusercontent.com/NupsNils/nngrp_guides/main/ui_elements/imgs/nngrp_listview.png">
+
+```LUA
+:AddColumnWithCustomStyle(...) // Fügt einen Column hinzu Bsp. AddColumnWithCustomStyle("Test")
+:SetColumnFont(font) // Ändert die Font der Columns Bsp. SetColumnFont("NNGRP.50")
+:AddLineWithCustomStyle(...) // Fügt eine Line hinzu Bsp. AddLineWithCustomStyle("Test")
+:SetLineFont(font) // Ändert die Font der Line Bsp. SetColumnFont("NNGRP.50")
+```
+## Bsp. wie im Bild
+```LUA
+self.Element = self.Frame:Add("NNGRP.ListView")
+self.Element:SetSize(w * .4, h * .4)
+self.Element:Center()
+self.Element:SetHeaderHeight(self.Frame:GetTall() * .035)
+self.Element:SetDataHeight(self.Frame:GetTall() * .03)
+self.Element:SetMultiSelect(false)
+self.Element:SetText("")
+self.Element:AddColumnWithCustomStyle("Test")
+function self.Element:Paint(w,h)
+    draw.RoundedBox(0, 0, 0, w, h, Color(25,25,25))
+end
+
+for k, v in pairs({"Test1","Test2","Test3","Test4","Test5"}) do
+    local line = self.Element:AddLineWithCustomStyle(v)
+        
+    if v == "Test2" then
+        line:SetTextColor(Color(150, 0, 0))
+    end
+end
+```
